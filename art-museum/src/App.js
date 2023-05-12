@@ -1,10 +1,12 @@
 import harvardArt from "./data/harvardArt";
-console.log(harvardArt);
+import GalleryNavigation from "./components/GalleryNavigation";
 
 function App() {
-  return (
-    <h1>Hello from App Academy</h1>
-  );
+  
+  
+    return <GalleryNavigation galleries={harvardArt.records}/>
+  
+  // return [galleries]
 }
 
 export default App;
